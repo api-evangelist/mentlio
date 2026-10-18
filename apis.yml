@@ -1,6 +1,7 @@
 aid: mentlio
 name: Mentlio
 description: 'Mentlio provides engineering intelligence and token optimization for AI workloads. Their platform measures AI usage locally, reduces token waste, and keeps prompts and source code on-device. By offering detailed insights into AI costs, performance, and ROI, Mentlio helps teams understand and control AI spend, improve efficiency, and ensure data privacy. The service includes research, documentation, and integrations, targeting enterprises seeking to optimize AI adoption and reduce operational expenses.'
+image: https://www.mentlio.com/mentlio-icon.png
 url: https://raw.githubusercontent.com/api-evangelist/mentlio/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:g2-catalog
