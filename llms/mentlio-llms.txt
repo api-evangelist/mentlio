@@ -1,0 +1,31 @@
+# Mentlio
+
+> Mentlio is engineering intelligence and token optimization for AI coding tools. It meters Claude Code, Codex, Cursor, and GitHub Copilot on the developer's device, routes each prompt to the cheapest sufficient model, attributes AI spend to teams and workflows, and ties it to shipped outcomes (Delivery Points). Privacy-first: raw prompts, model outputs, and source code never leave the machine; dashboards receive derived metrics only.
+
+Mentlio is a Y Combinator (S2026) company. Benchmark figures published on the site come from replayable traces with stated assumptions, not customer case studies.
+
+## Start here
+
+- [Mentlio homepage](https://www.mentlio.com/): cut AI spend without cutting quality; on-device metering, routing, and attributable savings
+- [Book an intro](https://www.mentlio.com/intro): talk to the founders
+
+## Guides and glossary
+
+- [What is tokenmaxxing? (and what to do instead)](https://www.mentlio.com/glossary/tokenmaxxing): definition, why the practice failed by mid-2026, and why token efficiency (outcomes per dollar of AI spend) is the better target
+- [How to measure AI ROI in software engineering](https://www.mentlio.com/guides/ai-roi-software-engineering): spend attribution, outcome units such as merged PRs and Delivery Points, cost per delivered outcome, quality adjustment
+
+## Research
+
+- [A more useful way to manage AI coding costs](https://www.mentlio.com/research/ai-coding-costs-scale): where AI coding spend is created (context, model choice, carried tool output) and how to reduce it without capping usage
+- [The 100X engineer is already here](https://www.mentlio.com/research/100x-engineer): what the fastest AI-native engineers do differently and how teams spread those workflows
+- [Terminal-Bench 2.1: routing at the cost-quality frontier](https://www.mentlio.com/research/terminal-bench-2-1): replay benchmark; Mentlio Route retained 98.93% of Always Fable solved tasks at 24.90% lower average per-task cost
+- [Routing in the Fable era](https://www.mentlio.com/research/fable-era-routing): SWE-Bench Pro replay; 96.32% route sufficiency at 20.66% lower cost than Always Fable
+- [SWE-Bench Pro routing methodology and results](https://www.mentlio.com/swe-bench-whitepaper): how routing policies are scored against per-model pass and fail traces
+- [How Mentlio measures token-saver savings](https://www.mentlio.com/research/token-savers): what each saver measures and what the dashboard estimates do not claim
+- [Blog index](https://www.mentlio.com/research): articles, guides, benchmarks, and methodology notes
+- [Sitemap](https://www.mentlio.com/sitemap.xml): every published public URL
+
+## Optional
+
+- [Product documentation](https://www.mentlio.com/docs)
+- [Security](https://www.mentlio.com/security)

@@ -1,0 +1,88 @@
+generated: '2026-10-18'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 4
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - docs
+  - other
+  - source
+  - website
+hosts:
+- host: api.mentlio.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: mentlio.com
+  role: api
+  relation: own
+- host: app.mentlio.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: mentlio.com
+  role: other
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: mentlio.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  serves: []
+  registrable_domain: mentlio.com
+  role: website
+  relation: own
+- host: www.mentlio.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Security
+  - Documentation
+  - APIReference
+  - GettingStarted
+  - Support
+  - Blog
+  - Pricing
+  - TermsOfService
+  - PrivacyPolicy
+  - Roadmap
+  - SignUp
+  - Status
+  serves:
+  - docs
+  - hosting
+  vendor: vercel
+  registrable_domain: mentlio.com
+  role: docs
+  relation: own

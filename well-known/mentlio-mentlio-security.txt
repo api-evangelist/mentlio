@@ -1,0 +1,6 @@
+Contact: mailto:security@mentlio.com
+Expires: 2027-01-31T00:00:00Z
+Preferred-Languages: en
+Canonical: https://www.mentlio.com/.well-known/security.txt
+Canonical: https://app.mentlio.com/.well-known/security.txt
+Policy: https://www.mentlio.com/security

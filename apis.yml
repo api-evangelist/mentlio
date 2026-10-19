@@ -1,28 +1,59 @@
 aid: mentlio
+
 name: Mentlio
-description: 'Mentlio provides engineering intelligence and token optimization for AI workloads. Their platform measures AI usage locally, reduces token waste, and keeps prompts and source code on-device. By offering detailed insights into AI costs, performance, and ROI, Mentlio helps teams understand and control AI spend, improve efficiency, and ensure data privacy. The service includes research, documentation, and integrations, targeting enterprises seeking to optimize AI adoption and reduce operational expenses.'
+
+description: Mentlio provides engineering intelligence and token optimization for AI workloads. Their platform measures AI usage locally, reduces
+  token waste, and keeps prompts and source code on-device. By offering detailed insights into AI costs, performance, and ROI, Mentlio helps teams
+  understand and control AI spend, improve efficiency, and ensure data privacy. The service includes research, documentation, and integrations,
+  targeting enterprises seeking to optimize AI adoption and reduce operational expenses.
+
 image: https://www.mentlio.com/mentlio-icon.png
+
 url: https://raw.githubusercontent.com/api-evangelist/mentlio/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-18 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-18'
+
 modified: '2026-10-18'
+
 tags:
 - Company
 - AI
 - Engineering Intelligence
 - Token Optimization
 - Enterprise
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: https://www.mentlio.com/security
+- type: LLMsTxt
+  url: llms/mentlio-llms.txt
+- type: SecurityTxt
+  url: well-known/mentlio-security.txt
+- type: SecurityTxt
+  url: well-known/mentlio-mentlio-security.txt
+- type: SecurityTxt
+  url: well-known/mentlio-app-security.txt
+- type: WellKnown
+  url: well-known/mentlio-well-known.yml
+- type: Hosts
+  url: hosts/mentlio-hosts.yml
+- type: Vendors
+  url: vendors/mentlio-vendors.yml
 - type: VulnerabilityDisclosure
   url: security/mentlio-vulnerability-disclosure.yml
 - type: DomainSecurity
@@ -45,14 +76,32 @@ common:
   url: https://www.mentlio.com/tos
 - type: PrivacyPolicy
   url: https://www.mentlio.com/privacy
+- type: GitHubOrganization
+  url: https://github.com/mentlio
+- type: Roadmap
+  url: https://www.mentlio.com/roadmap
+- type: SignUp
+  url: https://www.mentlio.com/login
 - type: Status
   url: https://www.mentlio.com/status
+
+apis:
+- name: Mentlio API
+  description: Mentlio API provides endpoints for engineering intelligence and token optimization.
+  humanURL: https://www.mentlio.com/docs
+  aid: mentlio:mentlio-api
 
 x-coverage:
   state: unreadable
   reason: js-rendered-docs
-  detail: "Documentation pages are JavaScript-rendered single-page apps with no machine‑readable OpenAPI or other contract discovered."
+  detail: Documentation pages are JavaScript-rendered single-page apps with no machine‑readable OpenAPI or other contract discovered.
   evidence:
-    - url: https://www.mentlio.com/docs
-      status: 200
-  checked: 2026-10-18
+  - url: https://www.mentlio.com/docs
+    status: 200
+  checked: '2026-10-18'
+x-enrichment:
+  date: '2026-10-18'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
