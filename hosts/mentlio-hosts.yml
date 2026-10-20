@@ -1,41 +1,17 @@
-generated: '2026-10-18'
+generated: '2026-10-20'
 method: derived
 source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
 generator: derive-hosts.py
 summary:
-  hosts: 5
-  own: 4
+  hosts: 3
+  own: 2
   other_domain: 0
   platform: 1
   roles:
-  - api
   - docs
-  - other
   - source
   - website
 hosts:
-- host: api.mentlio.com
-  found_by:
-  - probed
-  - site-links
-  - contract-discovery
-  - well-known
-  types: []
-  serves: []
-  registrable_domain: mentlio.com
-  role: api
-  relation: own
-- host: app.mentlio.com
-  found_by:
-  - probed
-  - site-links
-  - contract-discovery
-  - well-known
-  types: []
-  serves: []
-  registrable_domain: mentlio.com
-  role: other
-  relation: own
 - host: github.com
   found_by:
   - pointer
@@ -48,9 +24,6 @@ hosts:
 - host: mentlio.com
   found_by:
   - pointer
-  - probed
-  - contract-discovery
-  - well-known
   types:
   - Website
   serves: []
@@ -61,10 +34,6 @@ hosts:
   found_by:
   - pointer
   - apis[]
-  - probed
-  - docs-index
-  - contract-discovery
-  - well-known
   - vendor-detect
   types:
   - Security

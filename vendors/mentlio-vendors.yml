@@ -1,4 +1,4 @@
-generated: '2026-10-18'
+generated: '2026-10-20'
 method: probed
 source: pre-flight dossier (docs platform, portal detections) + CNAME chains and response headers of the hosts apis.yml names
 registry: all/0-working/vendors.yml
@@ -19,10 +19,10 @@ vendors:
 - vendor: vercel
   name: Vercel
   area: hosting
-  host: www.mentlio.com
-  evidence: cname:66562a0fa5b8f5c0.vercel-dns-017.com
-  signal: docs-platform
-  confidence: medium
+  host: mentlio.com
+  evidence: header:x-vercel-id
+  signal: header
+  confidence: high
   kin_score: []
 reliance:
   areas_vendor_served:
@@ -33,7 +33,7 @@ reliance:
   note: areas where a third party was DETECTED serving this provider; an area absent here was either self-run or not observed, and this script
     cannot tell those apart
 checked:
-- 'docs-platform: custom'
+- 'docs-platform: not probed'
 - mentlio.com (Website)
 - www.mentlio.com (Documentation)
 - www.mentlio.com (APIReference)
